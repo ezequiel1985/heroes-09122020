@@ -1,8 +1,7 @@
 const express = require('express');
 var router = express.Router();
+let creditosControllers = require ('../controllers/creditosControllers.js');
 
-router.get('/', (req, res) => {
-	res.send('Hola, soy Ezequiel Jaureguiberry. Me agrada emprender cosas nuevas, aunque me cuesta madurar las ideas porque soy muy estructurado.');
-});
+router.get('/', creditosControllers.creditos);
 
 module.exports = router;
